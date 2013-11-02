@@ -1,0 +1,25 @@
+#######################################
+# Functions
+#######################################
+omp_get_thread_num()
+omp_get_num_threads()
+omp_get_max_threads()
+omp_get_num_procs()
+
+
+#######################################
+# Compiling
+#######################################
+g++ -fopenmp program.cpp
+gfortran -ffree-form -fopenmp program.f
+
+
+#######################################
+# Running
+#######################################
+
+# Environment variables
+OMP_NUM_THREADS / omp_set_num_threads()
+OMP_DYNAMIC
+OMP_NESTED
+OMP_SCHEDULE
